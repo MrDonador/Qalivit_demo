@@ -1,0 +1,268 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 100vh; /* Aprovecha toda la altura del viewport */
+    margin: 0; /* Asegura que no haya margen exterior */
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.container {
+    background-color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 2px solid #000;
+    width: 300px;
+    max-width: 500px;
+    text-align: center;
+}
+.logo {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+.title {
+    color:#F3A819;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.subtitle {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+.social-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.social-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+.divider::before {
+    margin-right: 0.5rem;
+}
+.divider::after {
+    margin-left: 0.5rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.form-group select {
+    font-size: 100%;
+    line-height: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.form-group input {
+    font-size: 100%;
+    line-height: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.remember-me input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+.remember-me .forgot-password {
+    float: right;
+    color: #3794f7;
+    text-decoration: none;
+}
+.remember-me .forgot-password:hover {
+    text-decoration: underline;
+    color: #F3A819;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between; 
+    align-items: center;
+    text-align: left;
+}
+.remember-me label {
+    font-size: px;
+    margin-bottom: 0;
+}
+.sign-in-button {
+    font-weight: bold;
+    width: 100%;
+    padding: 0.50rem;
+    background-color: #F3A819;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.sign-in-button:hover {
+    border: 2px solid #000;
+    color: #ffffff;
+}
+.sign-up {
+    margin-top: 1rem;
+    color: #666;
+}
+.sign-up a {
+    color: #3794f7;
+    text-decoration: none;
+}
+.sign-up a:hover {
+    text-decoration: underline;
+    color: #F3A819;
+}
+.alerta {
+    position: fixed;
+    top:5px;
+    right: 5px;
+    background-color: #ffffff;
+    color: #000;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 225px;
+    max-width: 100%;
+}
+.alerta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.alerta-header h2 {
+    font-size: 16px;
+    margin: 0;
+}
+.alerta-header button {
+    position: relative;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    float:right;
+}
+.alerta-body {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.alerta-footer button {
+    background-color: #F3A819;
+    color: #000;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.alerta-footer button:hover {
+    color: #fff;
+}
+.informe{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #00000050;
+} 
+.product-list {
+    width: 300px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    height: 500px;
+}
+#cerrarInforme {
+    float: right;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    margin: 0px 3px;
+}
+.lista{
+padding: 5px ;
+overflow-x:visible;
+height: 400px;
+overflow-y: auto;
+}
+.product-item {
+display: flex;
+align-items: center;
+background: white;
+border-radius: 10px;
+padding: 10px;
+margin-bottom: 10px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.product-item img {
+width: 50px;
+height: 50px;
+border-radius: 5px;
+margin-right: 5px;
+}
+
+.product-info {
+color: #F3A819;
+display: flex;
+flex-direction: column;
+}
+
+.product-info h3 {
+font-size: 14px;
+margin: 0;
+}
+
+.product-info p {
+font-size: 12px;
+color: #888;
+margin: 5px 0 0;
+}
+
+.lista::-webkit-scrollbar {
+margin-left:1px;
+width: 3px;
+}
+
+.lista::-webkit-scrollbar-thumb {
+background: rgba(1, 2, 3, 0.4);
+border-radius: 10px;
+}
