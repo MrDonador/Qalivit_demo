@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>    
+    <body>
+        <main class="container">
+            <div class="title">Qalivit</div>
+            <div class="subtitle">Empresa lavandera de dinero</div>
+            <form id="login-form" method="post" action="verificar.php">
+                <input type="hidden" name="accion" value="login">
+                <div class="form-group">
+                    <label for="nick">Correo Corporativo</label>
+                    <input type="text" id="nick" name="nick" placeholder="Ingresa tu correo corporativo..." required>
+                </div>
+                <div class="form-group">
+                    <form>
+                        <label for="opciones">Producto:</label>
+                        <select id="opciones" name="opciones">
+                            <option value="1">Miel</option>
+                            <option value="2">Algarrobina</option>
+                            <option value="3">Harina maiz morado</option>
+                        </select>s
+                    </form>
+                </div>
+                <button id="AbrirInforme" class="sign-in-button">Hacer pedido</button>
+            </form>
+        </main>
+        <div class="informe">
+            <div class="panel">
+            <button id="cerrarInforme">&times;</button>
+                <div class="product-list">
+                    <div class="title">La maka mi flaca</div>
+                    <div class="subtitle">Codigo Take It</div>
+                    <div class="lista">
+                        <div class="product-item">
+                            <div class="product-info">
+                                <h3>Oe tarao que xuxa pides si esto es de joda</h3>
+                                <p>Imbecil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </body>
+
+
+
+
+<script>
+    const btnInforme = document.getElementById('AbrirInforme');
+    const Informe = document.querySelector('.informe');
+    const btnCerarInforme = document.getElementById('cerrarInforme');
+    btnInforme.addEventListener('click', function() {
+        Informe.style.display = 'flex';
+    });
+
+    btnCerarInforme.addEventListener('click', function() {
+        Informe.style.display = 'none';
+        });
+</script>
+</html>
